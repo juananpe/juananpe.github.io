@@ -1,8 +1,16 @@
 baseURL = "https://juananpe.github.io/genai-crew/"
 languageCode = "en-us"
 title = "GenAI Crew"
-theme = "ananke"
+theme = "PaperMod"
 enableRobotsTXT = true
+buildDrafts = true
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
 [pagination]
   pagerSize = 4 # Set the number of posts to show before overflowing to the next page.
 summaryLength = 10 # Configure how long the post summary should be on the homepage.
@@ -79,7 +87,6 @@ disqusShortname = ""
     orcid = "#"  
 
   text_color = ""
-  author = ""
   favicon = ""
   site_logo = ""
   # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
@@ -93,11 +100,17 @@ disqusShortname = ""
     url = "/"
     weight = 1
 
-# [[menu.main]]
-#   identifier = "tags"
-#   name = "Tags"
-#   url = "tags/"
-#   weight = 2
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
 
 # [[menu.main]]
 #   name = "Archives"
