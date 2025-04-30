@@ -1,7 +1,7 @@
+name: 🏗️ Build and Deploy GitHub Pages
+
 permissions:
   contents: write  # allow pushing to gh-pages
-
-name: 🏗️ Build and Deploy GitHub Pages
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
       - name: 🛠️ Initialize Hugo Environment
         uses: peaceiris/actions-hugo@v2.6.0
         with:
-          hugo-version: "0.121.1"
+          hugo-version: "0.146.0"
           extended: true
 
       - name: 🏗️ Compile Hugo Static Files
