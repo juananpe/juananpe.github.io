@@ -1,3 +1,6 @@
+permissions:
+  contents: write  # allow pushing to gh-pages
+
 name: 🏗️ Build and Deploy GitHub Pages
 
 on:
