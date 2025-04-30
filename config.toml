@@ -1,12 +1,22 @@
 baseURL = "https://juananpe.github.io/genai-crew/"
 languageCode = "en-us"
 title = "GenAI Crew"
-theme = "PaperMod"
+theme = "ananke"
 
-enableRobotsTXT = true
-buildDrafts = true
-buildFuture = false
-buildExpired = false
+[params]
+  text_color = ""
+  author = ""
+  favicon = ""
+  site_logo = ""
+  description = "A collection of GenAI-related posts"
+  background_color_class = "bg-black"
+  recent_posts_number = 3
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
 
 [minify]
 disableXML = true
@@ -32,9 +42,7 @@ disqusShortname = ""
 [params]
 env = "production"
 title = "GenAI Crew"
-description = "A collection of GenAI-related posts"
 keywords = [ "Blog", "Portfolio", "GenAI" ]
-author = "GenAI Crew"
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
@@ -50,13 +58,6 @@ UseHugoToc = true
 [params.homeInfoParams]
 Title = "Welcome to GenAI Crew 👋"
 Content = "A collection of posts about Generative AI and related topics"
-
-# Menu links along the sidebar navigation.
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
 
 [[menu.main]]
 identifier = "archives"
