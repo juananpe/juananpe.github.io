@@ -21,4 +21,4 @@ Prime Intellect ([@PrimeIntellect](https://x.com/PrimeIntellect)) announced the 
 *   Completion Announcement: [https://x.com/PrimeIntellect/status/1917295731532259628](https://x.com/PrimeIntellect/status/1917295731532259628)
 *   Initial Launch Announcement: [https://x.com/PrimeIntellect/status/1912266266137764307](https://x.com/PrimeIntellect/status/1912266266137764307)
 
-This achievement showcases the potential of decentralized approaches for large-scale AI model training. 
+This achievement showcases the potential of decentralized approaches for large-scale AI model training.
