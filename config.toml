@@ -1,38 +1,38 @@
 baseURL = "https://juananpe.github.io/genai-crew/"
 languageCode = "en-us"
 title = "GenAI Crew"
-theme = "ananke"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = true
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
 
 [params]
-  # Site appearance
-  text_color = ""
-  author = ""
-  favicon = ""
-  site_logo = ""
-  description = "A collection of GenAI-related posts"
-  background_color_class = "bg-black"
-  recent_posts_number = 3
-  
-  # Site configuration
-  env = "production"
-  keywords = [ "Blog", "Portfolio", "GenAI" ]
-  DateFormat = "January 2, 2006"
-  defaultTheme = "auto"
-  disableThemeToggle = false
-  
-  # Content display settings
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  UseHugoToc = true
+env = "production"
+title = "GenAI Crew"
+description = "A collection of GenAI-related posts"
+keywords = [ "Blog", "Portfolio", "GenAI" ]
+author = "GenAI Crew"
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
 
 [params.homeInfoParams]
-  Title = "Welcome to GenAI Crew 👋"
-  Content = "A collection of posts about Generative AI and related topics"
+Title = "Welcome to GenAI Crew 👋"
+Content = "A collection of posts about Generative AI and related topics"
 
 [menu]
   [[menu.main]]
@@ -51,14 +51,6 @@ theme = "ananke"
     name = "Tags"
     url = "/tags/"
     weight = 20
-
-[minify]
-  disableXML = true
-  minifyOutput = true
-
-[pagination]
-  pagerSize = 4
-  summaryLength = 10
 
 # Add your Google Analytics identifier: UA-XXXXXXXX-X
 googleAnalytics = "" 
