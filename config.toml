@@ -4,6 +4,7 @@ title = "GenAI Crew"
 theme = "ananke"
 
 [params]
+  # Site appearance
   text_color = ""
   author = ""
   favicon = ""
@@ -11,6 +12,27 @@ theme = "ananke"
   description = "A collection of GenAI-related posts"
   background_color_class = "bg-black"
   recent_posts_number = 3
+  
+  # Site configuration
+  env = "production"
+  keywords = [ "Blog", "Portfolio", "GenAI" ]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  
+  # Content display settings
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+[params.homeInfoParams]
+  Title = "Welcome to GenAI Crew 👋"
+  Content = "A collection of posts about Generative AI and related topics"
 
 [menu]
   [[menu.main]]
@@ -18,13 +40,25 @@ theme = "ananke"
     url = "/"
     weight = 1
 
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
 [minify]
-disableXML = true
-minifyOutput = true
+  disableXML = true
+  minifyOutput = true
 
 [pagination]
-  pagerSize = 4 # Set the number of posts to show before overflowing to the next page.
-summaryLength = 10 # Configure how long the post summary should be on the homepage.
+  pagerSize = 4
+  summaryLength = 10
 
 # Add your Google Analytics identifier: UA-XXXXXXXX-X
 googleAnalytics = "" 
@@ -37,45 +71,7 @@ disqusShortname = ""
 
 # Set to false to disallow raw HTML in markdown files
 [markup.goldmark.renderer]
-    unsafe = true
-
-[params]
-env = "production"
-title = "GenAI Crew"
-keywords = [ "Blog", "Portfolio", "GenAI" ]
-DateFormat = "January 2, 2006"
-defaultTheme = "auto"
-disableThemeToggle = false
-ShowReadingTime = true
-ShowShareButtons = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = true
-ShowWordCount = true
-ShowRssButtonInSectionTermList = true
-UseHugoToc = true
-
-[params.homeInfoParams]
-Title = "Welcome to GenAI Crew 👋"
-Content = "A collection of posts about Generative AI and related topics"
-
-[[menu.main]]
-identifier = "archives"
-name = "Archives"
-url = "/archives/"
-weight = 10
-
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 20
-
-# [[menu.main]]
-#   name = "Archives"
-#   identifier = "archives"
-#   url = "archives/"
-#   weight = 3
+  unsafe = true
 
 # Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
