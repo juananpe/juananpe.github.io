@@ -1,7 +1,7 @@
 baseURL = "https://juananpe.github.io/genai-crew/"
 languageCode = "en-us"
 title = "GenAI Crew"
-theme = "PaperMod"
+theme = "ananke"
 
 enableRobotsTXT = true
 buildDrafts = true
@@ -29,6 +29,13 @@ ShowCodeCopyButtons = true
 ShowWordCount = true
 ShowRssButtonInSectionTermList = true
 UseHugoToc = true
+
+# Site appearance
+text_color = ""
+favicon = ""
+site_logo = ""
+background_color_class = "bg-black"
+recent_posts_number = 3
 
 [params.homeInfoParams]
 Title = "Welcome to GenAI Crew 👋"
@@ -87,3 +94,7 @@ disqusShortname = ""
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+
+[pagination]
+  pagerSize = 4
+  summaryLength = 10
