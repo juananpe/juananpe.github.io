@@ -24,9 +24,6 @@ disqusShortname = ""
 [taxonomies]
   tag = "tags"
 
-[author]
-	name = "jlumbroso"
-
 # Set to false to disallow raw HTML in markdown files
 [markup.goldmark.renderer]
     unsafe = true
@@ -140,3 +137,7 @@ weight = 20
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+
+# Add the new author configuration under [params]
+[params]
+author = "GenAI Crew"
