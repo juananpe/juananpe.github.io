@@ -105,4 +105,14 @@ When adding content (like a blog post or page) to this Hugo project that include
      - Use of relative vs. absolute paths
    - Use browser developer tools to check actual URL paths
 
-Remember: These practices ensure your site works consistently both locally and when deployed to GitHub Pages, and remains maintainable if the base URL changes. 
+Remember: These practices ensure your site works consistently both locally and when deployed to GitHub Pages, and remains maintainable if the base URL changes.
+
+## Homepage Highlighting Process for New Posts
+
+When a new post is added and you want to update the homepage highlights:
+
+1. **Highlight the new post as the first (leftmost) box** in the main section.
+2. **Move the previous third (rightmost/oldest) box** from the main section to the "Previously Covered" section, appending it after any existing entries there.
+3. The "Previously Covered" section should accumulate all older posts, in the order they were moved out of the main section.
+
+This ensures the AI Agent Protocols Survey remains a permanent highlight, and the homepage always features the latest content and a consistent historical record. 

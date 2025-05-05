@@ -1,6 +1,6 @@
 ---
 title: "Intellect-2: First Decentralized 32B RL Training Complete"
-date: 2024-08-29 # Consider updating this date to the actual announcement date if known.
+date: 2025-04-27 # Consider updating this date to the actual announcement date if known.
 draft: false
 tags:
   [

@@ -4,37 +4,54 @@
     <h1 class="f1 lh-title">Topics of the Day ({{ .Site.Params.homepageDate }})</h1>
   </header>
   <section class="flex flex-wrap justify-around nested-copy-line-height lh-copy">
-    {{/* Box 1: AI Agent Protocols Survey */}}
-    <a href="{{ "/posts/survey-ai-agent-protocols/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
+    {{/* Box 1: Long Context & RAG: DeepMind Insights */}}
+    {{ $longContext := .Site.GetPage "posts/long-context-rag-release-notes.md" }}
+    <a href="{{ "/posts/long-context-rag-release-notes/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
+      <img src="{{ "images/long-context-rag-podcast.png" | absURL }}" alt="Long Context & RAG Podcast" class="db mb2">
+      <h2>Long Context & RAG: DeepMind Insights</h2>
+      <p>Podcast: Scaling context windows, RAG, and the future of LLMs.</p>
+      <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $longContext.Date.Format "2006-01-02" }}">{{ $longContext.Date.Format "Jan 2, 2006" }}</time>
+    </a>
+
+    {{/* Box 2: AI Agent Protocols Survey */}}
+    {{ $agentProtocols := .Site.GetPage "posts/survey-ai-agent-protocols.md" }}
+    <a href="{{ "/posts/survey-ai-agent-protocols/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
       <img src="{{ "images/agent-internet-ecosystem.png" | absURL }}" alt="AI Agent Protocols Survey" class="db mb2">
       <h2>AI Agent Protocols Survey</h2>
       <p>Comprehensive analysis of agent protocols and frameworks.</p>
+      <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $agentProtocols.Date.Format "2006-01-02" }}">{{ $agentProtocols.Date.Format "Jan 2, 2006" }}</time>
     </a>
 
-    {{/* Box 2: AI Agent Failure */}}
-    <a href="{{ "/posts/agent-failure/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
+    {{/* Box 3: AI Agent Failure */}}
+    {{ $agentFailure := .Site.GetPage "posts/agent-failure.md" }}
+    <a href="{{ "/posts/agent-failure/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
       <img src="{{ "images/agents-failure.png" | absURL }}" alt="AI Agents Failure" class="db mb2">
       <h2>Effects of AI Agents' Failure</h2>
       <p>Understanding agent misalignment.</p>
-    </a>
-
-    {{/* Box 3: Intellect-2 */}}
-    <a href="{{ "/posts/intellect-2/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
-      <img src="{{ "images/intellect2.png" | absURL }}" alt="Intellect-2" class="db mb2">
-      <h2>Intellect-2</h2>
-      <p>First 32B decentralized RL training.</p>
+      <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $agentFailure.Date.Format "2006-01-02" }}">{{ $agentFailure.Date.Format "Jan 2, 2006" }}</time>
     </a>
   </section>
 
   {{/* Previously Covered Section */}}
   <section class="mt5">
     <h2 class="f2 lh-title mb4">Previously Covered</h2>
-    <div class="flex flex-wrap justify-around nested-copy-line-height lh-copy">
+    <div class="flex flex-wrap justify-start nested-copy-line-height lh-copy">
       {{/* Gemini Caching Box */}}
-      <a href="{{ "/posts/gemini-caching/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc">
+      {{ $geminiCaching := .Site.GetPage "posts/gemini-caching.md" }}
+      <a href="{{ "/posts/gemini-caching/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc relative">
         <img src="{{ "images/gemini-context-caching.png" | absURL }}" alt="Gemini Context Caching" class="db mb2" style="max-height: 100px; object-fit: cover;">
         <h3 class="f4">Gemini Caching</h3>
         <p class="f6">Context caching benefits</p>
+        <time class="f7 absolute bottom-1 right-1 gray" datetime="{{ $geminiCaching.Date.Format "2006-01-02" }}">{{ $geminiCaching.Date.Format "Jan 2, 2006" }}</time>
+      </a>
+
+      {{/* Intellect-2 Box (moved from main section) */}}
+      {{ $intellect2 := .Site.GetPage "posts/intellect-2.md" }}
+      <a href="{{ "/posts/intellect-2/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc relative">
+        <img src="{{ "images/intellect2.png" | absURL }}" alt="Intellect-2" class="db mb2" style="max-height: 100px; object-fit: cover;">
+        <h3 class="f4">Intellect-2</h3>
+        <p class="f6">First 32B decentralized RL training.</p>
+        <time class="f7 absolute bottom-1 right-1 gray" datetime="{{ $intellect2.Date.Format "2006-01-02" }}">{{ $intellect2.Date.Format "Jan 2, 2006" }}</time>
       </a>
 
       {{/* Add more previous topics here with the same structure */}}
