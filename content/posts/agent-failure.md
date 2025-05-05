@@ -15,6 +15,6 @@ He mentioned:
 
 Here's the infographic he created summarizing some of these effects:
 
-{{< figure src="../images/infografia.jpg" alt="Infographic about AI Agent Failure Effects" >}}
+{{< figure src="/images/infografia.jpg" alt="Infographic about AI Agent Failure Effects" >}}
 
 For those interested in a deeper dive, you can read the original Microsoft whitepaper titled "The Taxonomy of Failure Modes in AI Agents" here: [https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/)

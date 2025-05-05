@@ -20,6 +20,6 @@ You can find a code example demonstrating this in the following notebook:
 [https://github.com/philschmid/gemini-samples/blob/main/examples/gemini-context-caching.ipynb](https://github.com/philschmid/gemini-samples/blob/main/examples/gemini-context-caching.ipynb)
 
 Here is an image illustrating the concept:
-{{< figure src="../images/gemini-caching-code.png" alt="Gemini Caching Code" >}}
+{{< figure src="/images/gemini-caching-code.png" alt="Gemini Caching Code" >}}
 
 This concept is similar to OpenAI's prompt caching feature ([https://openai.com/index/api-prompt-caching/](https://openai.com/index/api-prompt-caching/)). With OpenAI, caching is reportedly automatic for prompts exceeding a certain token count (e.g., 1024 tokens), provided the context prefix remains unchanged in subsequent requests. If the prompt is inserted _before_ the cached context, the caching mechanism might not be utilized.

@@ -1,29 +1,44 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns">
   <header>
-    <h1 class="f1 lh-title">Topics of the Day</h1>
+    <h1 class="f1 lh-title">Topics of the Day ({{ .Site.Params.homepageDate }})</h1>
   </header>
   <section class="flex flex-wrap justify-around nested-copy-line-height lh-copy">
-    {{/* Box 1: Gemini Context Caching */}}
-    <a href="{{ "gemini-caching" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
-      <img src="{{ "images/gemini-context-caching.png" | absURL }}" alt="Gemini Context Caching" class="db mb2">
-      <h2>Gemini Context Caching</h2>
-      <p>Exploring the benefits and mechanics.</p>
+    {{/* Box 1: AI Agent Protocols Survey */}}
+    <a href="{{ "/posts/survey-ai-agent-protocols/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
+      <img src="{{ "images/agent-internet-ecosystem.png" | absURL }}" alt="AI Agent Protocols Survey" class="db mb2">
+      <h2>AI Agent Protocols Survey</h2>
+      <p>Comprehensive analysis of agent protocols and frameworks.</p>
     </a>
 
     {{/* Box 2: AI Agent Failure */}}
-    <a href="{{ "agent-failure" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
+    <a href="{{ "/posts/agent-failure/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
       <img src="{{ "images/agents-failure.png" | absURL }}" alt="AI Agents Failure" class="db mb2">
       <h2>Effects of AI Agents' Failure</h2>
       <p>Understanding agent misalignment.</p>
     </a>
 
     {{/* Box 3: Intellect-2 */}}
-    <a href="{{ "intellect-2" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
+    <a href="{{ "/posts/intellect-2/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc">
       <img src="{{ "images/intellect2.png" | absURL }}" alt="Intellect-2" class="db mb2">
       <h2>Intellect-2</h2>
       <p>First 32B decentralized RL training.</p>
     </a>
+  </section>
+
+  {{/* Previously Covered Section */}}
+  <section class="mt5">
+    <h2 class="f2 lh-title mb4">Previously Covered</h2>
+    <div class="flex flex-wrap justify-around nested-copy-line-height lh-copy">
+      {{/* Gemini Caching Box */}}
+      <a href="{{ "/posts/gemini-caching/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc">
+        <img src="{{ "images/gemini-context-caching.png" | absURL }}" alt="Gemini Context Caching" class="db mb2" style="max-height: 100px; object-fit: cover;">
+        <h3 class="f4">Gemini Caching</h3>
+        <p class="f6">Context caching benefits</p>
+      </a>
+
+      {{/* Add more previous topics here with the same structure */}}
+    </div>
   </section>
 </article>
 {{ end }} 

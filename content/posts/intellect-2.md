@@ -13,7 +13,7 @@ tags:
 
 Prime Intellect ([@PrimeIntellect](https://x.com/PrimeIntellect)) announced the completion of INTELLECT-2, the first decentralized Reinforcement Learning (RL) training run for a 32-billion-parameter model.
 
-{{< figure src="../images/intellect2.png" alt="Intellect-2 Training Progress" >}}
+{{< figure src="/images/intellect2.png" alt="Intellect-2 Training Progress" >}}
 
 **Key Points:**
 

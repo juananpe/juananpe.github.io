@@ -10,18 +10,58 @@ When adding content (like a blog post or page) to this Hugo project that include
    - When moving external images (from `/tmp`, absolute paths, or web URLs), copy them to this directory
 
 2. **Reference Images in Content Pages:**
-   - For posts (pages that will have URLs ending in `/`), use relative paths with parent directory:
+   - For posts and pages, use the `figure` shortcode with the correct path:
      ```markdown
-     {{< figure src="../images/your-image.png" alt="Your Alt Text" >}}
+     {{< figure src="/images/your-image.png" alt="Your Alt Text" >}}
      ```
-   - The `../` is necessary because post URLs end with a slash, so we need to go up one level
+   - Note: Use a leading forward slash `/` to make the path absolute from the site root
+   - This approach works consistently regardless of:
+     - Page location (posts, archives, or other sections)
+     - Base URL configuration
+     - Whether the site is served locally or deployed
 
-3. **Reference Images in Homepage Templates:**
-   - In templates like `layouts/index.html`, use `absURL` for image paths:
+3. **Reference Images in Templates:**
+   - In templates, use `absURL` for image paths:
      ```html
      <img src="{{ "images/your-image.png" | absURL }}" alt="Your Alt Text">
      ```
    - This ensures proper URL generation regardless of base URL configuration
+
+## Post Management and Archives
+
+1. **Content Structure:**
+   ```
+   content/
+     ├── posts/           # All blog posts go here
+     │   ├── post1.md
+     │   ├── post2.md
+     │   └── post3.md
+     ├── archives.md      # Archives page
+     └── about.md         # About page
+   ```
+
+2. **Adding New Posts:**
+   - Place all new posts in the `content/posts/` directory
+   - Posts will automatically appear on the homepage if they're among the most recent
+   - The number of recent posts shown on homepage is controlled by `recent_posts_number` in `config.toml` (default: 3)
+   - Older posts automatically move to the archives page
+
+3. **Archives System:**
+   - The archives page shows all posts except the most recent ones
+   - Posts are displayed in reverse chronological order
+   - Pagination is enabled (12 posts per page)
+   - The archives use the same card-style layout as the homepage
+   - No manual intervention needed - Hugo handles the transition automatically based on post dates
+
+4. **Post Front Matter:**
+   ```yaml
+   ---
+   title: "Your Post Title"
+   date: YYYY-MM-DD
+   draft: false
+   tags: ["tag1", "tag2"]
+   ---
+   ```
 
 ## Link Handling in Hugo
 

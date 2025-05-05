@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article class="pa3 pa4-ns">
+  <header>
+    <h1 class="f1 lh-title">{{ .Title }}</h1>
+    <div class="f4 nested-copy-line-height nested-links">
+      {{ .Content }}
+    </div>
+  </header>
+  <section class="flex-ns flex-wrap justify-around mt5">
+    {{ $n_recent := $.Site.Params.recent_posts_number | default 3 }}
+    {{ $pages := where .Site.RegularPages "Section" "posts" }}
+    {{ $archived := after $n_recent $pages.ByDate.Reverse }}
+    {{ if $archived }}
+      {{ $paginator := .Paginate $archived 12 }}
+      {{ range $paginator.Pages }}
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          {{ .Render "summary" }}
+        </div>
+      {{ end }}
+      {{ template "_internal/pagination.html" . }}
+    {{ else }}
+      <div class="tc">
+        <p class="f4">No archived posts yet. Check back later!</p>
+      </div>
+    {{ end }}
+  </section>
+</article>
+{{ end }} 
