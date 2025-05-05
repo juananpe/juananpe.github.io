@@ -29,6 +29,7 @@ ShowCodeCopyButtons = true
 ShowWordCount = true
 ShowRssButtonInSectionTermList = true
 UseHugoToc = true
+mainSections = ["."]
 
 # Site appearance
 text_color = ""
