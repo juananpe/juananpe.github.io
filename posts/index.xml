@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on GenAI Crew</title>
+    <link>https://juananpe.github.io/posts/</link>
+    <description>Recent content in Posts on GenAI Crew</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 May 2025 10:00:00 +0000</lastBuildDate>
+    <atom:link href="https://juananpe.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Survey of AI Agent Protocols: Framework and Future</title>
+      <link>https://juananpe.github.io/posts/survey-ai-agent-protocols/</link>
+      <pubDate>Mon, 05 May 2025 10:00:00 +0000</pubDate>
+      <guid>https://juananpe.github.io/posts/survey-ai-agent-protocols/</guid>
+      <description>&lt;p&gt;A recent research paper from Shanghai Jiao Tong University and the ANP Community provides the first comprehensive analysis of existing agent protocols, offering a systematic two-dimensional classification that distinguishes between context-oriented versus inter-agent protocols and general-purpose versus domain-specific protocols.&lt;/p&gt;&#xA;&lt;p&gt;The paper highlights a critical issue in the rapidly evolving landscape of LLM agents: the lack of standardized protocols for communication with external tools or data sources. This standardization gap makes it difficult for agents to work together effectively or scale across complex tasks, ultimately limiting their potential for tackling real-world problems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Long Context Models &amp; RAG: Insights from Google DeepMind (Release Notes Podcast)</title>
+      <link>https://juananpe.github.io/posts/long-context-rag-release-notes/</link>
+      <pubDate>Mon, 05 May 2025 10:00:00 +0000</pubDate>
+      <guid>https://juananpe.github.io/posts/long-context-rag-release-notes/</guid>
+      <description>&lt;p&gt;Explore the synergy between long context models and Retrieval Augmented Generation (RAG) in this episode of the Release Notes podcast. Google DeepMind&amp;rsquo;s Nikolay Savinov joins host Logan Kilpatrick to discuss scaling context windows into the millions, recent quality improvements, RAG versus long context, and what&amp;rsquo;s next in the field.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://juananpe.github.io/images/long-context-rag-podcast.png&#34;&#xA;    alt=&#34;Release Notes Podcast: Long Context &amp;amp; RAG&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Watch the episode:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=NHMJ9mqKeMQ&amp;amp;ab_channel=GoogleforDevelopers&#34;&gt;YouTube Video&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Listen to the podcast:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://goo.gle/3Bm7QzQ&#34;&gt;Apple Podcasts&lt;/a&gt; | &lt;a href=&#34;https://goo.gle/3ZL3ADl&#34;&gt;Spotify&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;episode-summary&#34;&gt;Episode Summary&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Defining tokens and context windows:&lt;/strong&gt; What is a token, and why do LLMs use them? How does tokenization affect model behavior and limitations?&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Long context vs. RAG:&lt;/strong&gt; When is RAG still necessary, and how do long context models change the landscape for knowledge retrieval?&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scaling context windows:&lt;/strong&gt; The technical and economic challenges of moving from 1M to 10M+ tokens, and what breakthroughs are needed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quality improvements:&lt;/strong&gt; How recent models (Gemini 1.5 Pro, 2.5 Pro) have improved long context quality, and what benchmarks matter.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Practical tips:&lt;/strong&gt; Context caching, combining RAG with long context, and best practices for developers.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;The future:&lt;/strong&gt; Predictions for superhuman coding assistants, agentic use cases, and the role of infrastructure.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;chapters&#34;&gt;Chapters&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;0:00 - Intro&lt;/li&gt;&#xA;&lt;li&gt;0:52 Introduction &amp;amp; defining tokens&lt;/li&gt;&#xA;&lt;li&gt;5:27 Context window importance&lt;/li&gt;&#xA;&lt;li&gt;9:53 RAG vs. Long Context&lt;/li&gt;&#xA;&lt;li&gt;14:19 Scaling beyond 2 million tokens&lt;/li&gt;&#xA;&lt;li&gt;18:41 Long context improvements since 1.5 Pro release&lt;/li&gt;&#xA;&lt;li&gt;23:26 Difficulty of attending to the whole context&lt;/li&gt;&#xA;&lt;li&gt;28:37 Evaluating long context: beyond needle-in-a-haystack&lt;/li&gt;&#xA;&lt;li&gt;33:41 Integrating long context research&lt;/li&gt;&#xA;&lt;li&gt;34:57 Reasoning and long outputs&lt;/li&gt;&#xA;&lt;li&gt;40:54 Tips for using long context&lt;/li&gt;&#xA;&lt;li&gt;48:51 The future of long context: near-perfect recall and cost reduction&lt;/li&gt;&#xA;&lt;li&gt;54:42 The role of infrastructure&lt;/li&gt;&#xA;&lt;li&gt;56:15 Long-context and agents&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;notable-quotes&#34;&gt;Notable Quotes&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;You can rely on context caching to make it both cheaper and faster to answer.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Failure Modes of AI Agents: Effects</title>
+      <link>https://juananpe.github.io/posts/agent-failure/</link>
+      <pubDate>Sun, 27 Apr 2025 11:00:00 +0000</pubDate>
+      <guid>https://juananpe.github.io/posts/agent-failure/</guid>
+      <description>&lt;p&gt;Rubén Fernández (@rub) recently shared insights on a Microsoft paper about AI Agent failure modes, concerned it might not get the attention it deserves. You can find his original note here: &lt;a href=&#34;https://substack.com/@thelearningrub/note/c-113284290?utm_source=notes-share-action&amp;amp;r=dhjup&#34;&gt;https://substack.com/@thelearningrub/note/c-113284290&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;He mentioned:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I liked Microsoft&amp;rsquo;s paper about Failure Modes of AI Agents, but I think it will go unnoticed by most people, so I&amp;rsquo;ll prepare small infographics to showcase the information it contains.&lt;/p&gt;&#xA;&lt;p&gt;The first one, some Effects of AI Agents&amp;rsquo; failure&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gemini Context Caching Explained</title>
+      <link>https://juananpe.github.io/posts/gemini-caching/</link>
+      <pubDate>Sun, 27 Apr 2025 10:00:00 +0000</pubDate>
+      <guid>https://juananpe.github.io/posts/gemini-caching/</guid>
+      <description>&lt;p&gt;Context caching in Gemini allows you to store and pre-compute context, such as documents or even entire code repositories. This cached context can then be reused in subsequent requests, leading to significant cost savings – potentially up to 75%.&lt;/p&gt;&#xA;&lt;p&gt;For example, using Gemini 1.5 Pro, caching a full GitHub repository and then asking follow-up questions about it demonstrates this capability. Each subsequent request utilizing the same cache could cost substantially less ($0.31 vs. $1.25 per 1 million tokens, according to the tweet).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Intellect-2: First Decentralized 32B RL Training Complete</title>
+      <link>https://juananpe.github.io/posts/intellect-2/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://juananpe.github.io/posts/intellect-2/</guid>
+      <description>&lt;p&gt;Prime Intellect (&lt;a href=&#34;https://x.com/PrimeIntellect&#34;&gt;@PrimeIntellect&lt;/a&gt;) announced the completion of INTELLECT-2, the first decentralized Reinforcement Learning (RL) training run for a 32-billion-parameter model.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://juananpe.github.io/images/intellect2.png&#34;&#xA;    alt=&#34;Intellect-2 Training Progress&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Key Points:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Milestone:&lt;/strong&gt; This marks the first successful decentralized RL training of a 32B model.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Open Collaboration:&lt;/strong&gt; The training was open to compute contributions from anyone, making it fully permissionless.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Goal:&lt;/strong&gt; The project aims to scale towards frontier reasoning capabilities in areas like coding, math, and science.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Upcoming Release:&lt;/strong&gt; A full open-source release, including model checkpoints, training data, and a detailed technical report, is expected approximately one week after the announcement (made around late August 2024).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community Effort:&lt;/strong&gt; The announcement highlighted the significant contributions from various compute providers, including Demeter&lt;em&gt;compute, string, BioProtocol, mev_pete, plaintext_cap, skre_0, oldmankotaro, plabs, ibuyrugs, 0xfr&lt;/em&gt;, marloXBT, herb0x_, mo, toptickcrypto, cannopo, samsja19, jackminong, and primeprimeint1234.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Links:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

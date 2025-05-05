@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agent-Protocols on GenAI Crew</title>
+    <link>https://juananpe.github.io/tags/agent-protocols/</link>
+    <description>Recent content in Agent-Protocols on GenAI Crew</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 May 2025 10:00:00 +0000</lastBuildDate>
+    <atom:link href="https://juananpe.github.io/tags/agent-protocols/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Survey of AI Agent Protocols: Framework and Future</title>
+      <link>https://juananpe.github.io/posts/survey-ai-agent-protocols/</link>
+      <pubDate>Mon, 05 May 2025 10:00:00 +0000</pubDate>
+      <guid>https://juananpe.github.io/posts/survey-ai-agent-protocols/</guid>
+      <description>&lt;p&gt;A recent research paper from Shanghai Jiao Tong University and the ANP Community provides the first comprehensive analysis of existing agent protocols, offering a systematic two-dimensional classification that distinguishes between context-oriented versus inter-agent protocols and general-purpose versus domain-specific protocols.&lt;/p&gt;&#xA;&lt;p&gt;The paper highlights a critical issue in the rapidly evolving landscape of LLM agents: the lack of standardized protocols for communication with external tools or data sources. This standardization gap makes it difficult for agents to work together effectively or scale across complex tasks, ultimately limiting their potential for tackling real-world problems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

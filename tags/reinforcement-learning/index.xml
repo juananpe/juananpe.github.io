@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reinforcement-Learning on GenAI Crew</title>
+    <link>https://juananpe.github.io/tags/reinforcement-learning/</link>
+    <description>Recent content in Reinforcement-Learning on GenAI Crew</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://juananpe.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intellect-2: First Decentralized 32B RL Training Complete</title>
+      <link>https://juananpe.github.io/posts/intellect-2/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://juananpe.github.io/posts/intellect-2/</guid>
+      <description>&lt;p&gt;Prime Intellect (&lt;a href=&#34;https://x.com/PrimeIntellect&#34;&gt;@PrimeIntellect&lt;/a&gt;) announced the completion of INTELLECT-2, the first decentralized Reinforcement Learning (RL) training run for a 32-billion-parameter model.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://juananpe.github.io/images/intellect2.png&#34;&#xA;    alt=&#34;Intellect-2 Training Progress&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Key Points:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Milestone:&lt;/strong&gt; This marks the first successful decentralized RL training of a 32B model.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Open Collaboration:&lt;/strong&gt; The training was open to compute contributions from anyone, making it fully permissionless.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Goal:&lt;/strong&gt; The project aims to scale towards frontier reasoning capabilities in areas like coding, math, and science.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Upcoming Release:&lt;/strong&gt; A full open-source release, including model checkpoints, training data, and a detailed technical report, is expected approximately one week after the announcement (made around late August 2024).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community Effort:&lt;/strong&gt; The announcement highlighted the significant contributions from various compute providers, including Demeter&lt;em&gt;compute, string, BioProtocol, mev_pete, plaintext_cap, skre_0, oldmankotaro, plabs, ibuyrugs, 0xfr&lt;/em&gt;, marloXBT, herb0x_, mo, toptickcrypto, cannopo, samsja19, jackminong, and primeprimeint1234.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Links:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
