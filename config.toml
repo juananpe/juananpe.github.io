@@ -1,4 +1,4 @@
-baseURL = "https://juananpe.github.io/genai-crew/"
+baseURL = "https://juananpe.github.io/"
 languageCode = "en-us"
 title = "GenAI Crew"
 theme = "ananke"
