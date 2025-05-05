@@ -84,21 +84,25 @@ When adding content (like a blog post or page) to this Hugo project that include
 1. **Configuration:**
    - In `config.toml`, set your `baseURL` to match your GitHub Pages URL:
      ```toml
-     baseURL = "https://username.github.io/repository-name/"
+     baseURL = "https://username.github.io/"
      ```
+   - For user/organization sites (like `username.github.io`), do **not** include a repository name in the baseURL.
 
 2. **Local Testing:**
    - Test with the same base URL structure:
      ```bash
-     hugo server --baseURL "http://localhost:1313/repository-name/" --appendPort=false
+     hugo server --baseURL "http://localhost:1313/" --appendPort=false
      ```
 
 3. **URL Structure:**
-   - Never hardcode the repository name (e.g., "genai-crew") in paths
+   - Never hardcode the repository name in paths
    - Use Hugo's built-in URL handling functions (`relURL`, `absURL`)
    - Let Hugo handle all URL generation based on the `baseURL` setting
 
-4. **Troubleshooting:**
+4. **GitHub Pages Settings:**
+   - For user/organization sites, set GitHub Pages to deploy from the `gh-pages` branch and the `/ (root)` folder in your repository settings.
+
+5. **Troubleshooting:**
    - If images/links work locally but not on GitHub Pages, check:
      - Path cases (GitHub Pages is case-sensitive)
      - Leading/trailing slashes
