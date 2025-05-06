@@ -4,7 +4,16 @@
     <h1 class="f1 lh-title">Topics of the Day ({{ now.Format "January 2, 2006" }})</h1>
   </header>
   <section class="flex flex-wrap justify-around nested-copy-line-height lh-copy">
-    {{/* Box 1: Gradio MCP Support */}}
+    {{/* Box 1: Magnific Upscale Conf (NEW) */}}
+    {{ $magnific := .Site.GetPage "posts/magnific-upscale-conf.md" }}
+    <a href="{{ "/posts/magnific-upscale-conf/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
+      <img src="{{ "images/magnific-upscale-thumb.jpg" | absURL }}" alt="Magnific Upscale Conf Thumbnail" class="db mb2">
+      <h2>Magnific: From $15k to $1M in Weeks</h2>
+      <p>Insights from Javi Lopez & Upscale Conf details.</p>
+      <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $magnific.Date.Format "2006-01-02" }}">{{ $magnific.Date.Format "Jan 2, 2006" }}</time>
+    </a>
+
+    {{/* Box 2: Gradio MCP Support */}}
     {{ $gradioMCP := .Site.GetPage "posts/gradio-mcp-support.md" }}
     <a href="{{ "/posts/gradio-mcp-support/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
       <img src="{{ "images/gradio-mcp-demo.png" | absURL }}" alt="Gradio MCP Support" class="db mb2">
@@ -13,7 +22,7 @@
       <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $gradioMCP.Date.Format "2006-01-02" }}">{{ $gradioMCP.Date.Format "Jan 2, 2006" }}</time>
     </a>
 
-    {{/* Box 2: Long Context & RAG: DeepMind Insights */}}
+    {{/* Box 3: Long Context & RAG: DeepMind Insights */}}
     {{ $longContext := .Site.GetPage "posts/long-context-rag-release-notes.md" }}
     <a href="{{ "/posts/long-context-rag-release-notes/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
       <img src="{{ "images/long-context-rag-podcast.png" | absURL }}" alt="Long Context & RAG Podcast" class="db mb2">
@@ -21,22 +30,22 @@
       <p>Podcast: Scaling context windows, RAG, and the future of LLMs.</p>
       <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $longContext.Date.Format "2006-01-02" }}">{{ $longContext.Date.Format "Jan 2, 2006" }}</time>
     </a>
-
-    {{/* Box 3: AI Agent Protocols Survey */}}
-    {{ $agentProtocols := .Site.GetPage "posts/survey-ai-agent-protocols.md" }}
-    <a href="{{ "/posts/survey-ai-agent-protocols/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
-      <img src="{{ "images/agent-internet-ecosystem.png" | absURL }}" alt="AI Agent Protocols Survey" class="db mb2">
-      <h2>AI Agent Protocols Survey</h2>
-      <p>Comprehensive analysis of agent protocols and frameworks.</p>
-      <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $agentProtocols.Date.Format "2006-01-02" }}">{{ $agentProtocols.Date.Format "Jan 2, 2006" }}</time>
-    </a>
   </section>
 
   {{/* Previously Covered Section */}}
   <section class="mt5">
     <h2 class="f2 lh-title mb4">Previously Covered</h2>
     <div class="flex flex-wrap justify-start nested-copy-line-height lh-copy">
-      {{/* AI Agent Failure Box (moved from main section) */}}
+      {{/* AI Agent Protocols Survey (moved from main section) */}}
+      {{ $agentProtocols := .Site.GetPage "posts/survey-ai-agent-protocols.md" }}
+      <a href="{{ "/posts/survey-ai-agent-protocols/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc relative">
+        <img src="{{ "images/agent-internet-ecosystem.png" | absURL }}" alt="AI Agent Protocols Survey" class="db mb2" style="max-height: 100px; object-fit: cover;">
+        <h3 class="f4">AI Agent Protocols Survey</h3>
+        <p class="f6">Comprehensive analysis of agent protocols and frameworks.</p>
+        <time class="f7 absolute bottom-1 right-1 gray" datetime="{{ $agentProtocols.Date.Format "2006-01-02" }}">{{ $agentProtocols.Date.Format "Jan 2, 2006" }}</time>
+      </a>
+
+      {{/* AI Agent Failure Box */}}
       {{ $agentFailure := .Site.GetPage "posts/agent-failure.md" }}
       <a href="{{ "/posts/agent-failure/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc relative">
         <img src="{{ "images/agents-failure.png" | absURL }}" alt="AI Agents Failure" class="db mb2" style="max-height: 100px; object-fit: cover;">
