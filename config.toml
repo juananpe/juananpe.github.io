@@ -30,7 +30,6 @@ ShowWordCount = true
 ShowRssButtonInSectionTermList = true
 UseHugoToc = true
 mainSections = ["."]
-homepageDate = "2025-05-05"  # Custom date for homepage title
 
 # Site appearance
 text_color = ""

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="pa3 pa4-ns">
   <header>
-    <h1 class="f1 lh-title">Topics of the Day ({{ .Site.Params.homepageDate }})</h1>
+    <h1 class="f1 lh-title">Topics of the Day ({{ now.Format "January 2, 2006" }})</h1>
   </header>
   <section class="flex flex-wrap justify-around nested-copy-line-height lh-copy">
     {{/* Box 1: Gradio MCP Support */}}
