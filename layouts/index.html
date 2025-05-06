@@ -4,7 +4,16 @@
     <h1 class="f1 lh-title">Topics of the Day ({{ .Site.Params.homepageDate }})</h1>
   </header>
   <section class="flex flex-wrap justify-around nested-copy-line-height lh-copy">
-    {{/* Box 1: Long Context & RAG: DeepMind Insights */}}
+    {{/* Box 1: Gradio MCP Support */}}
+    {{ $gradioMCP := .Site.GetPage "posts/gradio-mcp-support.md" }}
+    <a href="{{ "/posts/gradio-mcp-support/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
+      <img src="{{ "images/gradio-mcp-demo.png" | absURL }}" alt="Gradio MCP Support" class="db mb2">
+      <h2>Gradio MCP Support</h2>
+      <p>Building AI Tools in Just 5 Lines of Code</p>
+      <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $gradioMCP.Date.Format "2006-01-02" }}">{{ $gradioMCP.Date.Format "Jan 2, 2006" }}</time>
+    </a>
+
+    {{/* Box 2: Long Context & RAG: DeepMind Insights */}}
     {{ $longContext := .Site.GetPage "posts/long-context-rag-release-notes.md" }}
     <a href="{{ "/posts/long-context-rag-release-notes/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
       <img src="{{ "images/long-context-rag-podcast.png" | absURL }}" alt="Long Context & RAG Podcast" class="db mb2">
@@ -13,7 +22,7 @@
       <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $longContext.Date.Format "2006-01-02" }}">{{ $longContext.Date.Format "Jan 2, 2006" }}</time>
     </a>
 
-    {{/* Box 2: AI Agent Protocols Survey */}}
+    {{/* Box 3: AI Agent Protocols Survey */}}
     {{ $agentProtocols := .Site.GetPage "posts/survey-ai-agent-protocols.md" }}
     <a href="{{ "/posts/survey-ai-agent-protocols/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
       <img src="{{ "images/agent-internet-ecosystem.png" | absURL }}" alt="AI Agent Protocols Survey" class="db mb2">
@@ -21,21 +30,21 @@
       <p>Comprehensive analysis of agent protocols and frameworks.</p>
       <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $agentProtocols.Date.Format "2006-01-02" }}">{{ $agentProtocols.Date.Format "Jan 2, 2006" }}</time>
     </a>
-
-    {{/* Box 3: AI Agent Failure */}}
-    {{ $agentFailure := .Site.GetPage "posts/agent-failure.md" }}
-    <a href="{{ "/posts/agent-failure/" | relURL }}" class="link black dim w-100 w-30-ns ma2 ba b--moon-gray pa3 tc relative">
-      <img src="{{ "images/agents-failure.png" | absURL }}" alt="AI Agents Failure" class="db mb2">
-      <h2>Effects of AI Agents' Failure</h2>
-      <p>Understanding agent misalignment.</p>
-      <time class="f6 absolute bottom-1 right-1 gray" datetime="{{ $agentFailure.Date.Format "2006-01-02" }}">{{ $agentFailure.Date.Format "Jan 2, 2006" }}</time>
-    </a>
   </section>
 
   {{/* Previously Covered Section */}}
   <section class="mt5">
     <h2 class="f2 lh-title mb4">Previously Covered</h2>
     <div class="flex flex-wrap justify-start nested-copy-line-height lh-copy">
+      {{/* AI Agent Failure Box (moved from main section) */}}
+      {{ $agentFailure := .Site.GetPage "posts/agent-failure.md" }}
+      <a href="{{ "/posts/agent-failure/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc relative">
+        <img src="{{ "images/agents-failure.png" | absURL }}" alt="AI Agents Failure" class="db mb2" style="max-height: 100px; object-fit: cover;">
+        <h3 class="f4">Effects of AI Agents' Failure</h3>
+        <p class="f6">Understanding agent misalignment.</p>
+        <time class="f7 absolute bottom-1 right-1 gray" datetime="{{ $agentFailure.Date.Format "2006-01-02" }}">{{ $agentFailure.Date.Format "Jan 2, 2006" }}</time>
+      </a>
+
       {{/* Gemini Caching Box */}}
       {{ $geminiCaching := .Site.GetPage "posts/gemini-caching.md" }}
       <a href="{{ "/posts/gemini-caching/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc relative">
@@ -45,7 +54,7 @@
         <time class="f7 absolute bottom-1 right-1 gray" datetime="{{ $geminiCaching.Date.Format "2006-01-02" }}">{{ $geminiCaching.Date.Format "Jan 2, 2006" }}</time>
       </a>
 
-      {{/* Intellect-2 Box (moved from main section) */}}
+      {{/* Intellect-2 Box */}}
       {{ $intellect2 := .Site.GetPage "posts/intellect-2.md" }}
       <a href="{{ "/posts/intellect-2/" | relURL }}" class="link black dim w-100 w-20-ns ma2 ba b--moon-gray pa2 tc relative">
         <img src="{{ "images/intellect2.png" | absURL }}" alt="Intellect-2" class="db mb2" style="max-height: 100px; object-fit: cover;">
