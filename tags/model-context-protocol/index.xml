@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Model Context Protocol on GenAI Crew</title>
+    <link>https://juananpe.github.io/tags/model-context-protocol/</link>
+    <description>Recent content in Model Context Protocol on GenAI Crew</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://juananpe.github.io/tags/model-context-protocol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gradio MCP Support: Building AI Tools in Just 5 Lines of Code</title>
+      <link>https://juananpe.github.io/posts/gradio-mcp-support/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://juananpe.github.io/posts/gradio-mcp-support/</guid>
+      <description>&lt;h2 id=&#34;gradio-now-supports-the-model-context-protocol-mcp&#34;&gt;Gradio Now Supports the Model Context Protocol (MCP)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.gradio.app/&#34;&gt;Gradio&lt;/a&gt;, the popular Python library for building ML interfaces, now officially supports the Model Context Protocol (MCP). This means any Gradio app can be called as a tool by Large Language Models (LLMs) like Claude and GPT-4.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-mcp&#34;&gt;What is MCP?&lt;/h2&gt;&#xA;&lt;p&gt;The Model Context Protocol standardizes how applications provide context to LLMs. It allows models to interact with external tools such as image generators, file systems, and APIs. By providing a standardized protocol for tool-calling, MCP extends LLMs&amp;rsquo; capabilities beyond text generation.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

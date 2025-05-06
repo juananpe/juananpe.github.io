@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://juananpe.github.io/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juananpe.github.io/tags/ai-tools/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juananpe.github.io/tags/gradio/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juananpe.github.io/posts/gradio-mcp-support/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juananpe.github.io/tags/llm/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juananpe.github.io/tags/mcp/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juananpe.github.io/tags/model-context-protocol/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juananpe.github.io/posts/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://juananpe.github.io/tags/</loc>
+    <lastmod>2025-05-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://juananpe.github.io/posts/survey-ai-agent-protocols/</loc>
     <lastmod>2025-05-05T10:00:00+00:00</lastmod>
   </url><url>
@@ -20,12 +47,6 @@
     <loc>https://juananpe.github.io/tags/deepmind/</loc>
     <lastmod>2025-05-05T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://juananpe.github.io/</loc>
-    <lastmod>2025-05-05T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://juananpe.github.io/tags/llm/</loc>
-    <lastmod>2025-05-05T10:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://juananpe.github.io/posts/long-context-rag-release-notes/</loc>
     <lastmod>2025-05-05T10:00:00+00:00</lastmod>
   </url><url>
@@ -35,16 +56,10 @@
     <loc>https://juananpe.github.io/tags/podcast/</loc>
     <lastmod>2025-05-05T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://juananpe.github.io/posts/</loc>
-    <lastmod>2025-05-05T10:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://juananpe.github.io/tags/rag/</loc>
     <lastmod>2025-05-05T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://juananpe.github.io/tags/release-notes/</loc>
-    <lastmod>2025-05-05T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://juananpe.github.io/tags/</loc>
     <lastmod>2025-05-05T10:00:00+00:00</lastmod>
   </url><url>
     <loc>https://juananpe.github.io/posts/agent-failure/</loc>
